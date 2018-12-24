@@ -52,6 +52,9 @@ html {
   color: #03a9f4;
 }
 
+.container {
+  margin-bottom: 70px;
+}
 
 .all-news {
 margin-bottom: 60px;  
