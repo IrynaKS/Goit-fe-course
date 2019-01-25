@@ -213,8 +213,8 @@ img {
 
 .img-overlay {
   position: absolute;
-  width: 255px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(50, 50, 50);
   opacity: 0;
 }
@@ -229,6 +229,7 @@ img {
   list-style: none;
   line-height: 40px;
   background-color: none;
+
 }
 
 .product-list-item:nth-child(4n) {
