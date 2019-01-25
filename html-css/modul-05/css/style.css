@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0px;
+}
+
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  color: #555252;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.page-header {
+  padding-top: 43px;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.site-logo {
+  display: inline-block;
+  font-family: "Roboto light", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555252;
+  float: left;
+}
+
+.site-navigation {
+  float: right;
+}
+
+.site-navigation li {
+  float: left;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-navigation a {
+  color: #0f0101;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #1abc9c;
+}
+
+/* BACKGROUND */
+.slider {
+  position: relative;
+}
+
+/* .slider-img {
+  width: 100px;
+  height: auto;
+} */
+
+.slider-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.slider-info {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 0px;
+  text-align: center;
+}
+
+.icon-angle {
+  width: 104px;
+  height: 104px;
+  background-color:#4ec6ab;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  display: block;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.icon-angle:hover{
+  background-color: #1abc9c;
+  opacity: 1;
+ 
+}
+
+.slider-button-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.slider-info {
+  
+}
+.slider-head-text {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.head-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 37px;
+}
+
+.slider-menu {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: left;
+  color: #ffffff;
+ }
+ 
+ .slider-button-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* PRODUCT */
+.main {
+  background-color: #e9f0fd;
+  padding-top: 100px;
+}
+
+.main-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #555252;
+  margin: 0;
+  padding-bottom: 85px;
+}
+
+.main-name::after {
+  content: "";
+  display: block;
+  width: 164px;
+  margin: 0 auto;
+  border-bottom: 8px solid #1abc9c;
+  padding-bottom: 24px;
+}
+
+.product-list {
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.product-list-item {
+  float: left;
+  width: 255px;
+  margin-right: 30px;
+  list-style: none;
+  line-height: 40px;
+  background-color: none;
+}
+
+.product-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.product-sign__div {
+  background-color: rgb(50, 50, 50);
+}
+
+.product-sign-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  width: 200px;
+  height: 40px;
+  text-transform: uppercase;
+  float: left;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.product-sign-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  width: 55px;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  text-transform: uppercase;
+  float: right;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.product-list-item:hover .product-sign__div {
+  background-color: rgb(26, 188, 156);
+}
+
+.footer {
+  background-color: #323232;
+  height: 88px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 38px 0;
+}
+.footer-link {
+  text-decoration: none;
+  color: #1abc9c;
+}
+
