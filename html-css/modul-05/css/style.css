@@ -89,10 +89,10 @@ img {
   position: relative;
 }
 
-/* .slider-img {
-  width: 100px;
+.slider-img {
+  width: 100%;
   height: auto;
-} */
+}
 
 .slider-overlay {
   background-color: #000000;
@@ -206,6 +206,22 @@ img {
   margin: 0 auto;
 }
 
+.product-sign {
+  position: relative;
+  width: 255px;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 255px;
+  height: 282px;
+  background-color: rgb(50, 50, 50);
+  opacity: 0;
+}
+.product-sign:hover
+.img-overlay {
+  opacity: 0.5;
+}
 .product-list-item {
   float: left;
   width: 255px;
