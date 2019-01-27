@@ -250,9 +250,6 @@ img {
   margin: 0 8px 8px 0;
 }
 
-.button-icon a {
-  text-decoration: none;
-}
 
 .button-icon:hover {
   background-color: #1abc9c;
@@ -295,6 +292,7 @@ img {
   display: inline-block;
   background-image: url(../img/cart.png);
   background-repeat: no-repeat;
+  background-position: center;
   width: 28px;
   height: 28px;
 }
