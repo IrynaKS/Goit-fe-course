@@ -93,7 +93,7 @@ img {
   object-fit: cover;
 }
 
-.slider-overlay::after {
+.slider::after {
   content: "";
   background-color: rgba(0, 0, 2, 0.5);
   width: 100%;
@@ -101,6 +101,7 @@ img {
   position: absolute;
   left: 0px;
   top: 0px;
+ 
 
 }
 
@@ -115,6 +116,7 @@ img {
   transform: translate(-50%, -50%);
   font-size: 0px;
   text-align: center;
+  z-index: 1;
 }
 
 .icon-angle {
@@ -230,7 +232,7 @@ img {
   border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
-.product-sign:hover .img-overlay {
+.product-list-item:hover .img-overlay {
   display: block;
 }
 
@@ -352,7 +354,6 @@ img {
 
 .footer {
   background-color: #323232;
-  height: 88px;
   text-decoration: none;
   font-family: var(--semi-font);
   font-size: 16px;
