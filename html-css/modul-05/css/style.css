@@ -246,10 +246,11 @@ img {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  background-color: rgba(50, 50, 50, 0);
+  opacity: 1;
   background-position: center;
   margin: 0 8px 8px 0;
 }
-
 
 .button-icon:hover {
   background-color: #1abc9c;
@@ -276,15 +277,26 @@ img {
 .icon-cart {
   width: 166px;
   height: 50px;
-  background-color: #323232;
-  margin-left: 3px;
+  background-color: rgb(50, 50, 50);
+  border: 1px solid #fff;
+  cursor: pointer;
+  background-position: center;
+}
+
+.icon-cart:hover {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  opacity: 1;
 }
 
 .cart-text {
+  display: block;
+  box-sizing: border-box;
   font-family: var(--semi-font);
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  line-height: 46px;
 }
 
 .cart-text::before {
@@ -295,6 +307,9 @@ img {
   background-position: center;
   width: 28px;
   height: 28px;
+  padding: 10px;
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
 .product-sign__div {
