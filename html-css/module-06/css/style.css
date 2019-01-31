@@ -1,0 +1,268 @@
+@import "./vars.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  display: flex;
+  min-height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.site-logo {
+  font-family: var(--semi-font);
+  color: var(--main-items-color);
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 485px;
+  margin: 0;
+  padding: 0;
+}
+.site-navigation-item a {
+  color: #95e1d3;
+  font-family: var(--semi-font);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #f38181;
+}
+
+.site-navigation-item a:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* height: 3px;
+  background-color: #f38181; */
+  margin-top: 12px;
+  /* opacity: 0; */
+  border-bottom: 3px solid var(--hover-items-color);
+}
+
+
+/* MAIN */
+
+.main {
+  margin-bottom: 92px;
+}
+
+.pre-head {
+  font-family: var(--semi-head-font);
+  font-size: 24px;
+  color: var(--semi-font-color);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main-name {
+  font-family: var(--semi-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--semi-font-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.main-name::after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: 3px solid;
+  border-bottom-color: var(--hover-items-color);
+  padding-bottom: 24px;
+}
+
+.list-item-name {
+  font-family: var(--semi-font);
+  color: var(--semi-font-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.services-list-item {
+  flex-basis: 380px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 100px;
+  display: flex;
+ }
+
+.services-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.services-list-item p {
+  line-height: 1.6; 
+  font-size: 15px;
+}
+
+.services-list-item-icon {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 34px;
+  display: inline-block;
+  margin-right: 26px;
+}
+
+.services-description {
+  width: 300px;
+}
+
+.icon-alarm {
+background-position:  -114px -10px;
+}
+
+.icon-line_graph {
+  background-position: -62px -10px;
+
+}
+
+.icon-computer {
+  background-position: -114px -61px;
+
+}
+
+.icon-book {
+  background-position: -10px -62px;
+}
+
+.icon-home {
+  background-position: -62px -62px;
+
+}
+
+.icon-image {
+  background-position: -10px -10px;
+
+}
+/* TEAM */
+
+.about-team-description {
+  padding: 0 130px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 95px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.team-list-item {
+width: 380px;
+}
+
+.img-icons {
+display: flex;
+justify-content: center;
+}
+
+.social-icons-link {
+  background-image: url(../img/css_sprites.png);
+  background-repeat: no-repeat;
+  background-color: rgb(252, 227, 138);
+  color: rgb(243, 129, 129);
+  height: 56px;
+  width: 56px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1px; 
+  
+}
+/* background-image: url(../img/css_sprites.png);
+background-repeat: no-repeat;
+height: 34px;
+width: 34px;
+display: inline-block;
+margin-right: 26px; */
+
+.facebook {
+  background-position: -166px -56px; 
+}
+
+.tweeter {
+  background-position: -56px -114px;
+}
+
+.pinterest {
+ background-position: -166px -10px;
+}
+
+.instagram {
+ background-position: -10px -114px;
+}
+
+.icon-cart:hover {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  opacity: 1;
+}
+
+
+.footer {
+  text-decoration: none;
+  font-family: var(--semi-font);
+  font-size: 14px;
+  color: var(--semi-font-color);
+  /* text-align: center; */
+  padding: 38px 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--hover-items-color);
+}
