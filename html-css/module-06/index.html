@@ -8,19 +8,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
     />
     <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,900,900i"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css?family=Kaushan+Script"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -31,11 +28,21 @@
         <a href="#" class="site-logo"><h1 class="logo">MoGo</h1></a>
         <nav class="site-navigation">
           <ul class="site-navigation-list">
-            <li class="site-navigation-item"><a href="#">about</a></li>
-            <li class="site-navigation-item"><a href="#">service</a></li>
-            <li class="site-navigation-item"><a href="#">work</a></li>
-            <li class="site-navigation-item"><a href="#">blog</a></li>
-            <li class="site-navigation-item"><a href="#">contact</a></li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">about</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">service</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">work</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">blog</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">contact</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -112,7 +119,7 @@
       </main>
 
       <!-- TEAM -->
-      <section class="container">
+      <section class="about-team container">
         <p class="pre-head">Who we are</p>
         <h2 class="main-name">meet our team</h2>
         <p class="about-team-description container">
@@ -125,111 +132,83 @@
         <ul class="team-list container">
           <li class="team-list-item">
             <div class="team-card">
-              <div class="img">
-                <div class="img-overlay">
-                  <ul class="img-icons">
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link facebook"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link tweeter"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link pinterest"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link instagram"></a>
-                    </li>
-                  </ul>
+              <div class="team-card-overlay">
+                <div class="img-icons">
+                  <a href="#" class="social-icon-link facebook"></a>
+                  <a href="#" class="social-icon-link tweeter"></a>
+                  <a href="#" class="social-icon-link pinterest"></a>
+                  <a href="#" class="social-icon-link instagram"></a>
                 </div>
-
-                <figure class="team-member-pic">
-                  <img
-                    class="product-img"
-                    src="./img/member1.png"
-                    alt="Matthew Dix"
-                    width="380"
-                    height="470"
-                  />
-                  <figcaption>
-                    <h4 class="team-member-name">Matthew Dix</h4>
-                    <p class="team-member-position">Graphic Design</p>
-                  </figcaption>
-                </figure>
               </div>
+              <figure class="team-member-pic">
+                <img
+                  class="member-pic"
+                  src="./img/member1.png"
+                  alt="Matthew Dix"
+                  width="380"
+                  height="470"
+                />
+
+                <figcaption>
+                  <h4 class="team-member-name">Matthew Dix</h4>
+                  <p class="team-member-position">Graphic Design</p>
+                </figcaption>
+              </figure>
             </div>
           </li>
 
           <li class="team-list-item">
             <div class="team-card">
-              <div class="img">
-                <div class="img-overlay">
-                  <ul class="img-icons">
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link facebook"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link tweeter"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link pinterest"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link instagram"></a>
-                    </li>
-                  </ul>
+              <div class="team-card-overlay">
+                <div class="img-icons">
+                  <a href="#" class="social-icon-link facebook"></a>
+                  <a href="#" class="social-icon-link tweeter"></a>
+                  <a href="#" class="social-icon-link pinterest"></a>
+                  <a href="#" class="social-icon-link instagram"></a>
                 </div>
-                <figure class="team-member-pic">
-                  <img
-                    class="product-img"
-                    src="./img/member2.png"
-                    alt="Christopher Campbell"
-                    width="380"
-                    height="470"
-                  />
-                  <figcaption>
-                    <h4 class="team-member-name">Christopher Campbell</h4>
-                    <p class="team-member-position">Branding/UX design</p>
-                  </figcaption>
-                </figure>
               </div>
+
+              <figure class="team-member-pic">
+                <img
+                  class="member-pic"
+                  src="./img/member2.png"
+                  alt="Christopher Campbell"
+                  width="380"
+                  height="470"
+                />
+
+                <figcaption>
+                  <h4 class="team-member-name">Christopher Campbell</h4>
+                  <p class="team-member-position">Branding/UX design</p>
+                </figcaption>
+              </figure>
             </div>
           </li>
 
           <li class="team-list-item">
             <div class="team-card">
-              <div class="img">
-                <div class="img-overlay">
-                  <ul class="img-icons">
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link facebook"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link tweeter"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link pinterest"></a>
-                    </li>
-                    <li class="social-icons">
-                      <a href="#" class="social-icons-link instagram"></a>
-                    </li>
-                  </ul>
+              <div class="team-card-overlay">
+                <div class="img-icons">
+                  <a href="#" class="social-icon-link facebook"></a>
+                  <a href="#" class="social-icon-link tweeter"></a>
+                  <a href="#" class="social-icon-link pinterest"></a>
+                  <a href="#" class="social-icon-link instagram"></a>
                 </div>
-
-                <figure class="team-member-pic">
-                  <img
-                    class="product-img"
-                    src="./img/member3.png"
-                    alt="Michael Fertig"
-                    width="380"
-                    height="470"
-                  />
-                  <figcaption>
-                    <h4 class="team-member-name">Michael Fertig</h4>
-                    <p class="team-member-position">Developer</p>
-                  </figcaption>
-                </figure>
               </div>
+
+              <figure class="team-member-pic">
+                <img
+                  class="member-pic"
+                  src="./img/member3.png"
+                  alt="Michael Fertig"
+                  width="380"
+                  height="470"
+                />
+                <figcaption>
+                  <h4 class="team-member-name">Michael Fertig</h4>
+                  <p class="team-member-position">Developer</p>
+                </figcaption>
+              </figure>
             </div>
           </li>
         </ul>
@@ -241,6 +220,11 @@
           © 2016 MoGo free PSD template by
           <a href="#" class="footer-link">Laaqiq</a>
         </p>
+        <form action="#" id="footer-subscribe-form">
+            <input class="e-mail-form" type="text" placeholder="Your Email... " name="email" >
+            <input class="subscribe" type="submit" value="Subscribe">
+         </form>
+ 
       </footer>
     </div>
   </body>
