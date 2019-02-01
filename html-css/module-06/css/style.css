@@ -57,7 +57,7 @@ img {
 .site-navigation-list {
   display: flex;
   justify-content: space-between;
-  width: 485px;
+  width: 490px;
   margin: 0;
   padding: 0;
 }
@@ -74,6 +74,7 @@ img {
 .site-navigation-link:hover,
 .site-navigation-link:focus {
   color: #f38181;
+  transition: color 200ms linear;
 }
 
 .site-navigation-link:hover::after {
@@ -204,12 +205,12 @@ img {
   justify-content: space-between;
 }
 
-.team-card {
-  position: relative;
-}
-
 .team-list-item {
   width: 380px;
+}
+
+.team-card {
+  position: relative;
 }
 
 .team-card-overlay {
@@ -222,36 +223,53 @@ img {
     rgba(238, 215, 135, 0.9)
   );
   opacity: 0;
-  box-shadow: 10px 10px rgb(149, 225, 211);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.team-card:hover .team-card-overlay {
+  transition: transform 200ms linear, box-shadow 200ms linear;
+  opacity: 1;
+  box-shadow: 10px 10px rgb(149, 225, 211);
+}
+
 .member-pic {
   margin-bottom: 30px;
 }
 
-.team-card:hover .team-card-overlay {
-  opacity: 1;
+.img-icons {
+  width: 224px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-icon-link {
   background-image: url(../img/css_sprites.png);
   background-color: rgb(252, 227, 138);
   color: var(--hover-items-color);
-  height: 56px;
-  width: 56px;
-  display: inline-block;
-  text-align: center;
-  margin-right: 1px;
-  z-index: 1;
+  height: 100%;
+  width: 55px;
 }
 
-.social-icon-link:hover,
-.social-icon-link:focus {
-  background-color: var(-main-items-color);
-  /* border-color: var(-main-items-color); */
-  /* opacity: 1; */
+.social-icon-link:hover {
+  background-image: var(​--main-items-color);
+  opacity: 1;
+  transition: background-color 200ms linear;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .facebook {
@@ -289,6 +307,7 @@ img {
 .section {
   flex-grow: 1;
 }
+
 .footer {
   font-family: var(--semi-font);
   color: var(--semi-font-color);
@@ -304,6 +323,7 @@ img {
   text-decoration: none;
   color: var(--hover-items-color);
 }
+
 .e-mail-form {
   box-sizing: border-box;
   border: 1px solid ​#e7e7e7;
@@ -328,4 +348,9 @@ img {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
 }
