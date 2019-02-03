@@ -21,13 +21,8 @@ body {
   box-sizing: border-box;
   font-size: 14px;
 }
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
-.container {
+.wrapper {
   width: 1200px;
   margin: 0 auto;
 }
@@ -57,9 +52,13 @@ img {
 .site-navigation-list {
   display: flex;
   justify-content: space-between;
-  width: 490px;
+  /* width: 490px; */
   margin: 0;
   padding: 0;
+}
+
+.site-navigation-item:not(:last-child) {
+  margin-right: 60px; 
 }
 
 .site-navigation-link {
@@ -69,12 +68,13 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
+  /* transition: color 200ms linear; */
 }
 
 .site-navigation-link:hover,
 .site-navigation-link:focus {
   color: #f38181;
-  transition: color 200ms linear;
+  /* transition: color 200ms linear; */
 }
 
 .site-navigation-link:hover::after {
@@ -153,7 +153,7 @@ img {
 
 .services-list-item-icon {
   background-image: url(../img/css_sprites.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   height: 34px;
   width: 34px;
   display: inline-block;
@@ -216,7 +216,7 @@ img {
 .team-card-overlay {
   position: absolute;
   width: 100%;
-  height: 470px;
+  height: 87%;
   background-image: linear-gradient(
     to bottom,
     rgba(239, 138, 138, 0.9),
@@ -229,9 +229,9 @@ img {
 }
 
 .team-card:hover .team-card-overlay {
-  transition: transform 200ms linear, box-shadow 200ms linear;
   opacity: 1;
   box-shadow: 10px 10px rgb(149, 225, 211);
+  transition: transform 200ms linear, box-shadow 200ms linear;
 }
 
 .member-pic {
@@ -243,18 +243,23 @@ img {
   height: 55px;
   display: flex;
   justify-content: space-between;
+
+}
+
+.img-icons:not(:last-child) {
+  margin: 3px;
 }
 
 .social-icon-link {
   background-image: url(../img/css_sprites.png);
   background-color: rgb(252, 227, 138);
-  color: var(--hover-items-color);
   height: 100%;
   width: 55px;
+  opacity: 1;
 }
 
 .social-icon-link:hover {
-  background-image: var(​--main-items-color);
+  background-color: #95e1d3; 
   opacity: 1;
   transition: background-color 200ms linear;
 }
@@ -332,7 +337,6 @@ img {
   font-family: var(--main-font);
   font-style: italic;
   font-size: 15px;
-  color: #cccccc;
   padding-left: 12px;
 }
 
