@@ -68,24 +68,28 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
-  /* transition: color 200ms linear; */
+  transition: color 200ms linear;
 }
 
 .site-navigation-link:hover,
 .site-navigation-link:focus {
-  color: #f38181;
-  /* transition: color 200ms linear; */
-}
+  color: var(--hover-items-color);
+  
+}  
 
-.site-navigation-link:hover::after {
+.site-navigation-link::after {
   content: "";
   display: block;
+  border-bottom: 3px solid var(--hover-items-color);
   width: 100%;
   margin-top: 12px;
-  border-bottom: 3px solid var(--hover-items-color);
   transition: color 200ms linear;
+  visibility: hidden;
 }
 
+.site-navigation-item:hover .site-navigation-link::after {
+  visibility: visible; 
+}
 /* MAIN */
 
 .main {
@@ -153,7 +157,6 @@ img {
 
 .services-list-item-icon {
   background-image: url(../img/css_sprites.png);
-  /* background-repeat: no-repeat; */
   height: 34px;
   width: 34px;
   display: inline-block;
