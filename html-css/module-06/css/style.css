@@ -74,21 +74,23 @@ img {
 .site-navigation-link:hover,
 .site-navigation-link:focus {
   color: var(--hover-items-color);
-  
 }  
 
 .site-navigation-link::after {
   content: "";
   display: block;
-  border-bottom: 3px solid var(--hover-items-color);
+  border-bottom: 3px solid;
+  border-color: var(--hover-items-color);
   width: 100%;
   margin-top: 12px;
-  transition: color 200ms linear;
-  visibility: hidden;
+  opacity: 0;
+  /* visibility: hidden; */
 }
 
 .site-navigation-item:hover .site-navigation-link::after {
-  visibility: visible; 
+  /* visibility: visible;  */
+  opacity: 1;
+  transition: opacity 200ms linear;
 }
 /* MAIN */
 
