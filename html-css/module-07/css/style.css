@@ -180,7 +180,6 @@ img {
   background-position: -4px -10px;
   width: 42px;
   height: 42px;
-
 }
 
 /* CONTACTS */
@@ -206,23 +205,28 @@ img {
 
 .form-items {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .all-forms {
   display: block;
+  outline: none;
   width: 457px;
   box-sizing: border-box;
-  border: none;
+  border: 1px solid var(--forms-font-color);
   border-radius: 3px;
-  padding: 21px;
+  padding: 20px 0 20px 20px;
   font-family: var(--main-font-bold);
   font-size: 14px;
+  color: var(--semi-font-color);
+  background-color: #fff;
 }
+
 .all-forms::placeholder {
   text-transform: uppercase;
   color: var(--forms-font-color);
+  font-size: 14px;
 }
 
 .forms-left-input {
@@ -230,13 +234,29 @@ img {
 }
 
 .forms-left-input:not(:last-child) {
-   margin-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 .forms-right-input {
   min-height: 210px;
+  resize: none;
 }
 
+.forms-left-input:not(:last-child):focus:valid {
+  border: 2px solid green;
+}
+
+.forms-left-input:not(:last-child):focus:invalid {
+  border: 2px solid red;
+}
+
+textarea:focus:valid {
+  border: 2px solid green;
+}
+
+textarea:focus:invalid {
+  border: 2px solid red;
+}
 
 .button {
   display: block;
@@ -254,5 +274,3 @@ img {
   background-color: var(--hover-items-color);
   cursor: pointer;
 }
-
-
