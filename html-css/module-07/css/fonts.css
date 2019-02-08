@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "yellowtail-v9-latin";
+  src: url("../fonts/yellowtail-v9-latin/yellowtail-v9-latin-regular.woff") format("woff"),
+  url("../fonts/yellowtail-v9-latin/yellowtail-v9-latin-regular.woff2") format("woff2");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("../fonts/montserrat-regular/montserrat-v12-latin-regular.woff") format("woff"),
+  url("../fonts/montserrat-regular/montserrat-v12-latin-regular.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url("../fonts/montserrat-bold/montserrat-v12-latin-600.woff") format("woff"),
+  url("../fonts/montserrat-bold/montserrat-v12-latin-600.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "droidserif";
+  src: url("../fonts/droidserif/DroidSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: "roboto-slab";
+  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff") format("woff"),
+  url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff2") format("woff2");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+

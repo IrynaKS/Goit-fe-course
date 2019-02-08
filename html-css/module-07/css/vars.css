@@ -1,0 +1,12 @@
+:root {
+  --main-font: "montserrat-regular", sans-serif;
+  --main-font-bold: "montserrat-bold", sans-serif;
+  --italic-font: "droidserif", serif;
+  --text-font: "roboto-slab", serif;
+  --logo-font: "yellowtail-v9-latin", handwriting;
+  --headlines-font-color: #222222;
+  --text-font-color: #777777;
+  --semi-font-color: #333333;
+  --forms-font-color: #bbbbbb;
+  --hover-items-color: #fed136;
+  } 
