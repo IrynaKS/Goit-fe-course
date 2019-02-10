@@ -189,7 +189,6 @@ img {
   background-image: url(../img/Map-Image.png);
   background-repeat: no-repeat;
   background-position: right bottom;
-  min-height: 676px;
 }
 
 .contacts-head {
@@ -201,6 +200,10 @@ img {
 .contact-after-head {
   color: var(--text-font-color);
   margin-bottom: 75px;
+}
+
+.form {
+  padding-bottom: 115px;
 }
 
 .form-items {
