@@ -1,0 +1,14 @@
+:root {
+  --main-font: "montserrat-regular", sans-serif;
+  --main-font-bold: "montserrat-bold", sans-serif;
+  --semi-font: "roboto-light", sans-serif;
+  --text-font: "roboto-slab", sans-serif;
+  --main-text-color: #333333;
+  --semi-text-color: #666666;
+  --bgr-text-color: #ffffff;
+  --icon-tv-color: #ff4e50;
+  --icon-cup-color: ​#1cd7ad;
+  --icon-testtube-color: #ffa507;
+  --icon-plane-color: ​#4e73db;
+
+} 
