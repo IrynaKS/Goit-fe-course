@@ -31,7 +31,7 @@ img {
   background-color: #000000;
 }
 
-.section {
+.container {
   margin: 0 auto;
   max-width: 96rem;
 }
@@ -149,9 +149,11 @@ img {
 .partners-img {
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
-.pic-icon {
+.partners-card::after {
+  content: "";
   position: absolute;
   display: block;
   width: 4rem;
@@ -165,22 +167,22 @@ img {
   background-repeat: no-repeat;
 }
 
-.partner1 {
+.partner1::after {
   background-color: var(--icon-tv-color);
   background-position: -72px -4px;
 }
 
-.partner2 {
+.partner2::after  {
   background-color: var(--icon-testtube-color);
   background-position: -1px -3px;
 }
 
-.partner3 {
+.partner3::after  {
   background-color: #1cd7ad;
   background-position: -36px -6px;
 }
 
-.partner4 {
+.partner4::after  {
   background-color: #4e73db;
   background-position: -72px -4px;
 }
@@ -209,12 +211,12 @@ img {
   border-color: var(--icon-tv-color);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     min-width: 76.8rem;
   }
 
-  .section {
+  .container {
     width: 66rem;
   }
 
@@ -239,6 +241,7 @@ img {
     font-size: 5.2rem;
     margin-bottom: 4rem;
   }
+  
   .slogan-text-explanation {
     font-size: 2.4rem;
     margin-bottom: 3.5rem;
@@ -269,12 +272,12 @@ img {
   }
 }
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) {
   .wrapper {
     min-width: 94.2rem;
   }
 
-  .section {
+  .container {
     width: 94.2rem;
   }
 
