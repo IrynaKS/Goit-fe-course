@@ -168,7 +168,7 @@ img {
   width: 100%;
 }
 
-.header-actions__list {
+.header-actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ img {
   margin-bottom: 8.4rem;
 }
 
-.team-title {
+.team__title {
   margin-bottom: 6rem;
 }
 
@@ -386,7 +386,7 @@ img {
           justify-content: space-between;
 }
 
-.team-members__list-card {
+.team-members__card {
   position: relative;
 }
 
@@ -434,14 +434,14 @@ img {
   transition: all 200ms linear 0s;
 }
 
-.team-members__list-card:hover .team-members__overlay {
+.team-members__card:hover .team-members__overlay {
   opacity: 1;
   -webkit-transform: translate(-1rem, -1rem);
       -ms-transform: translate(-1rem, -1rem);
           transform: translate(-1rem, -1rem);
 }
 
-.team__list-image {
+.team-members__image {
   margin-bottom: 3rem;
 }
 
