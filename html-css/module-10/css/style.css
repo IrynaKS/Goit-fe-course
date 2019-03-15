@@ -463,8 +463,9 @@ img {
   width: 5.5rem;
   margin-right: 0.1rem;
   fill: #f38181;
-  text-align: center;
-  line-height: 7.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icons__link:hover {
