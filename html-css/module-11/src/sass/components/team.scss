@@ -1,0 +1,104 @@
+.team {
+    margin-bottom: 8.4rem;
+  }
+  
+  .title-section::after {
+    padding-bottom: 4.3rem;
+  }
+  
+  .team__about {
+    padding: 0 12.4rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 9.2rem;
+    font-family: $roboto-font;
+    font-size: 1.5rem;
+    color: $main-text-color;
+  }
+  
+  .team-members__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .team-members__card {
+    position: relative;
+  }
+  
+
+  .team-members__card:hover .team-members__overlay {
+    opacity: 1;
+    transform: translate(-1rem, -1rem);
+  }
+
+  
+  .team-members__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(239, 138, 138, 0.9),
+      rgba(238, 215, 135, 0.9)
+    );
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1rem 1rem $main-icons-color;
+    transition: all 200ms linear 0s;
+  }
+  
+  .team-members__image {
+    margin-bottom: 3rem;
+  }
+  
+  .team__list-item:hover {
+    transform: translate(-1rem, -1rem);
+  }
+  
+  .social-icons {
+   display: flex;
+  }
+  
+  .social-icons__link {
+    background-color: $header-hover-color;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-right: 0.1rem;
+    fill: #f38181;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons__link:hover {
+    background-color: $icon-hover-color;
+    fill: $header-font-color-white;
+    transition: background-color 200ms linear;
+  }
+  
+  .social-icons__link svg {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  
+  .team-members__name {
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    color: $title-text-color;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .team-members__pos {
+    font-family: $roboto-font;
+    color: $main-text-color;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+  }

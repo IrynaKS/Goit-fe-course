@@ -1,0 +1,23 @@
+.head-section {
+    background: linear-gradient(
+        to bottom,
+        rgba(243, 129, 129, 0.9),
+        rgba(252, 227, 138, 0.9)
+      ),
+      url(../images/bg-min.jpg) center/cover no-repeat;
+    margin-bottom: 4.6rem;
+}
+
+@media
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .head-section {
+    background: linear-gradient(
+        to bottom,
+        rgba(243, 129, 129, 0.9),
+        rgba(252, 227, 138, 0.9)
+      ),
+      url(../images/bg@2x-min.jpg) center/cover no-repeat;
+      
+  }
+}
