@@ -64,21 +64,19 @@
   }
   
   .social-icons__link {
+    @include crnter-flex('all');
     background-color: $header-hover-color;
     height: 5.5rem;
     width: 5.5rem;
     margin-right: 0.1rem;
-    fill: #f38181;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    fill: $icon-hover-color;
   
-  .social-icons__link:hover {
+  &:hover {
     background-color: $icon-hover-color;
     fill: $header-font-color-white;
     transition: background-color 200ms linear;
   }
+}
   
   .social-icons__link svg {
     display: inline-block;
@@ -90,7 +88,7 @@
     font-family: $secondary-font-stack;
     text-transform: uppercase;
     color: $title-text-color;
-    font-size: 1.4rem;
+    font-size: $common-text-size;
     text-align: center;
     margin-bottom: 1.5rem;
   }
