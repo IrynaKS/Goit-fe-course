@@ -64,7 +64,7 @@
   }
   
   .social-icons__link {
-    @include center-flex('all');
+    @include flex-center('all');
     background-color: $header-hover-color;
     height: 5.5rem;
     width: 5.5rem;
