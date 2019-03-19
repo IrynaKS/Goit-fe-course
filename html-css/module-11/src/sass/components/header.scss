@@ -4,8 +4,9 @@
   }
   
   .page-header {
-    display: flex;
-    align-items: center;
+    @include flex-center($type: 'ver')
+    // display: flex;
+    // align-items: center;
     justify-content: space-between;
     margin-bottom: 17rem;
   }

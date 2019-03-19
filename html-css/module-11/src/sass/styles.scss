@@ -4,6 +4,7 @@
 @import 'helpers/variables';
 @import 'helpers/placeholders';
 @import 'helpers/mixins';
+@import 'helpers/extras';
 @import './fonts';
 @import './normalize';
 
@@ -21,6 +22,7 @@
 @import 'components/title-subtitle';
 @import 'components/services';
 @import 'components/team';
-@import 'components/footer'
+@import 'components/socials-icons';
+@import 'components/footer';
 // @import 'components/';
 // @import 'components/';

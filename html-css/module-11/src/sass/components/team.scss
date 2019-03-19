@@ -34,6 +34,7 @@
 
   
   .team-members__overlay {
+    @include flex-center($type: 'all')
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,9 +46,9 @@
       rgba(238, 215, 135, 0.9)
     );
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     box-shadow: 1rem 1rem $main-icons-color;
     transition: all 200ms linear 0s;
   }
@@ -60,30 +61,6 @@
     transform: translate(-1rem, -1rem);
   }
   
-  .social-icons {
-   display: flex;
-  }
-  
-  .social-icons__link {
-    @include flex-center('all');
-    background-color: $header-hover-color;
-    height: 5.5rem;
-    width: 5.5rem;
-    margin-right: 0.1rem;
-    fill: $icon-hover-color;
-  
-  &:hover {
-    background-color: $icon-hover-color;
-    fill: $header-font-color-white;
-    transition: background-color 200ms linear;
-  }
-}
-  
-  .social-icons__link svg {
-    display: inline-block;
-    width: 2.6rem;
-    height: 2.6rem;
-  }
   
   .team-members__name {
     font-family: $secondary-font-stack;
