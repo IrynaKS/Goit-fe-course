@@ -2,14 +2,15 @@
    Import partials below
 */
 @import 'helpers/variables';
+@import 'helpers/placeholders';
+@import 'helpers/mixins';
 @import './fonts';
 @import './normalize';
 
 @import 'base';
 
 // components
-@import 'components/link';
-@import 'components/list';
+
 @import 'components/container';
 @import 'components/head-section';
 @import 'components/header';

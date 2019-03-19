@@ -9,8 +9,7 @@
   
   
   &::after {
-    content: "";
-    display: block;
+    @include pseudo($display: block);
     width: 6rem;
     margin: 0 auto;
     border-bottom: 0.3rem solid;

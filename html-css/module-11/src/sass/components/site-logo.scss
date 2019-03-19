@@ -1,5 +1,6 @@
 
 .site-logo__link {
+  @extend %link;
     font-family: $main-font-stack;
     color: $header-font-color-white;
     font-size: 3rem;
