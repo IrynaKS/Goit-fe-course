@@ -3,6 +3,7 @@
   }
   
   .header-nav__list {
+    @extend %list;
     display: flex;
   }
   
@@ -11,6 +12,7 @@
   }
   
   .header-nav__link {
+    @extend %link;
     color: $header-font-color-white;
     font-family: $secondary-font-stack;
     font-size: $common-text-size;

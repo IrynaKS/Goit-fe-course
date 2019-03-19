@@ -4,9 +4,19 @@
    Import partials below
 */
 
-.site-logo__link {
+.site-logo__link,
+.header-nav__link,
+.button,
+.greeting-section__button {
   display: inline-block;
   text-decoration: none;
+}
+
+.header-nav__list,
+.team-members__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @font-face {

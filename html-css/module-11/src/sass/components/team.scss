@@ -17,6 +17,7 @@
   }
   
   .team-members__list {
+    @extend %list;
     display: flex;
     justify-content: space-between;
   }
